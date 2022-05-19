@@ -113,7 +113,7 @@ function App() {
       const delta = targetRocketPosition * Math.sin(Math.PI * 2 * t);
       if (rocket) {
         rocket.rotation.y += 0.01;
-        rocket.position.y = delta-2;
+        rocket.position.y = delta-5;
       }
 
       requestAnimationFrame(loop);
