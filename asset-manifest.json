@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.94911a21.css",
+    "main.js": "/portfolio/static/js/main.9143a595.js",
+    "static/js/787.91c9658d.chunk.js": "/portfolio/static/js/787.91c9658d.chunk.js",
+    "static/media/moon.png": "/portfolio/static/media/moon.775b9f28f33455041e0c.png",
+    "static/media/LandingPage Pokemon.png": "/portfolio/static/media/LandingPage Pokemon.353fe9fc0235bcff9fb5.png",
+    "static/media/Frame 1.png": "/portfolio/static/media/Frame 1.704c8bf411c764eb6fae.png",
+    "static/media/person.png": "/portfolio/static/media/person.289b53054002612108c9.png",
+    "static/media/LandingPage Gestion.png": "/portfolio/static/media/LandingPage Gestion.930224b07ce06bc7119d.png",
+    "index.html": "/portfolio/index.html",
+    "main.94911a21.css.map": "/portfolio/static/css/main.94911a21.css.map",
+    "main.9143a595.js.map": "/portfolio/static/js/main.9143a595.js.map",
+    "787.91c9658d.chunk.js.map": "/portfolio/static/js/787.91c9658d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.94911a21.css",
+    "static/js/main.9143a595.js"
+  ]
+}
