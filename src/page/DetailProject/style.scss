@@ -1,0 +1,67 @@
+@use "../../assets/colors/index.scss" as color;
+@use "../../assets/fonts/index.scss" as font;
+@use "../../assets/size/index.scss" as size;
+
+.detailProject{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    max-width: 1500px;
+    margin: 0 auto;
+    .detailProject__header{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        padding-left: 5%;
+        box-sizing: border-box;
+        a{
+            text-align: left;
+            color: color.$color__quinary;
+            font-size: 1rem;
+            text-decoration: underline;
+
+        }
+    }
+    .detailProject__container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        .detailProject__container-video{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding-right:5%;
+            box-sizing: border-box;
+            width: 60%;
+            .react-player{
+                min-width: 300px;
+            }
+        }
+        .detailProject__container__text{
+            width: 30%;
+            min-width: 300px;
+            color: white;
+            display:flex;
+            align-items: flex-start;
+            
+            .detailProject__container__text-container{
+                width: 100%;
+                min-width: 300px;
+                h1{
+                    font-family: font.$font_family;
+                    color: color.$color__quinary;
+                    font-size: 2rem;
+                    font-weight: 800;
+                    text-align: left;
+                }
+                li{
+                    color: color.$color__quinary;
+                }
+            }
+        }
+    }
+}

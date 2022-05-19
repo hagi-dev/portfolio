@@ -9,7 +9,6 @@ import "./style.scss";
 import { Color } from "three";
 
 const Home = ({ param }) => {
-  const [stateModal, setStateModal] = React.useState(false);
   const handleClick = () => {
     console.log("clicked about");
     return <Navigate to="/about" />;

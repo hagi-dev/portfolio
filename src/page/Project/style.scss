@@ -38,6 +38,7 @@
             position: relative;
             border-left: 6px color.$color__quinary solid;
             border-right: 6px color.$color__quinary solid;
+            transition: all 0.5s ease;
 
             img{
                 width: 100%;
@@ -64,6 +65,10 @@
                 font-weight: 400;
                 text-align: center;
             }
+           }
+
+           &:hover{
+               transform: scale(1.1);
            }
             
         }
