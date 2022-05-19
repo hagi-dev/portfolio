@@ -31,6 +31,22 @@ const Skills = ({ param, state }) => {
       name: "java",
       percentage: "60",
     },
+    {
+      name: "docker",
+      percentage: "50",
+    },
+    {
+      name: "SQL",
+      percentage: "70",
+    },
+    {
+      name: "MySQL",
+      percentage: "70",
+    },
+    {
+      name: "PostgreSQL",
+      percentage: "70",
+    },
   ];
   const tools = [
     {
@@ -57,6 +73,19 @@ const Skills = ({ param, state }) => {
       name: "Github",
       percentage: "60",
     },
+    {
+      name: "Material UI",
+      percentage: "80",
+    },
+    {
+      name: "Sass",
+      percentage: "60",
+    },
+    {
+      name: "JasonWebToken",
+      percentage: "50",
+    },
+    
   ];
 
   const settings = {
@@ -86,7 +115,7 @@ const Skills = ({ param, state }) => {
       <div className={`skills__container`}>
         <div className={`skills__container__tecnique`}>
           <div className={`skills__container__tecnique__lenguaje`}>
-            <h1 >Lenguajes</h1>
+            <h1 >Lenguajes y gestores de Base de datos</h1>
             <Slider {...settings}>
               {skills.map((skill, index) => (
                 <Card
@@ -139,6 +168,8 @@ const Skills = ({ param, state }) => {
             <li>Analisis del problema</li>
             <li>Buena comunicacion</li>
             <li>Positivismo</li>
+            <li>Autodidacta</li>
+            <li>Gestion de requerimientos</li>
           </ul>
         </div>
       </div>
