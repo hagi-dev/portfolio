@@ -1,0 +1,167 @@
+@use "../../assets/colors/index.scss" as color;
+@use "../../assets/fonts/index.scss" as font;
+@use "../../assets/size/index.scss" as size;
+
+.home{
+    width: 100%;
+    height: 100vh;
+    max-width: 1500px;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 auto;
+    position: relative;
+    padding: 3.5% 10%;
+    padding-right: 15%;
+    z-index: 11;
+
+    
+    .home__contac{
+        position: fixed;
+        top: 3%;
+        left: 10%;
+        font-size: 1.5rem;
+        z-index: 12;
+        color: color.$color__quinary;
+        text-decoration: underline;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+        &:hover{
+            color: white;
+        }
+        &:active{
+            transform: scale(0.9);
+        }
+    }
+
+    .home__logo{
+        position: fixed;
+        top: 3%;
+        right:10%;
+        cursor: pointer;
+        img{
+            width: 200px;
+            height: auto;
+        }
+    }
+
+    .home__container{
+        width: 100%;
+        box-sizing: border-box;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 450px 450px;
+        grid-template-rows: 290px 290px ;
+
+        grid-template-areas: 
+        " person text padding4"
+        " person scroll padding4" !important;
+
+        .home__container__image{
+            width: 100%;
+            grid-area: person;
+            opacity: 0;
+            img{
+                width: 100%;
+                height: auto;
+                margin-left: 20%;
+                animation: fadeIn 2s ease-in-out;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+            }
+        }
+        .home__container__text{
+            grid-area: text;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            h1{
+                width: 100%;
+                font-size: 2rem;
+                opacity: 0;
+                font-family: font.$font_family;
+                font-weight: 400;
+                color: #fff;
+                margin-bottom: 20px;
+                span{
+                    font-size: 3rem;
+                    font-family: font.$font_family;
+                    font-weight: 800;
+                    margin-left: 5%;
+                    color: color.$color__quinary;
+                }
+            }
+            h2{
+                font-size: 1.5rem;
+                font-family: font.$font_family;
+                font-weight: 400;
+                opacity: 0;
+                color: #fff;
+                margin-bottom: 20px;
+            }
+
+        }
+
+        .home__container__scroll{
+            grid-area: scroll;
+            width: 100%;
+
+            h3{
+                font-size: 1.5rem;
+                opacity: 0;
+                font-family: font.$font_family;
+                font-weight: 600;
+                color: #fff;
+                margin-bottom: 20px;
+            }
+
+            .home__container__scroll__icon{
+                animation : icon 8s ease-in-out;
+                p{
+                    font-size: 0.87rem;
+                    font-family: font.$font_family;
+                    font-weight: 400;
+                    color: color.$color__quinary;
+                    margin-bottom: 20px;
+                }
+                
+            }  
+        }
+    }
+}
+
+.item{
+    animation: start 2s ease-in-out forwards;
+    animation-delay: calc(var(--order) * 100ms);
+}
+
+@keyframes icon{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes start{
+    0%{
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(15px);
+    }
+}
