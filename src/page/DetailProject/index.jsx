@@ -46,6 +46,9 @@ const DetailProject = () => {
     },
   ];
   const project = data.find((item) => item.name === name);
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  },[]);
   return (
     <div className="detailProject">
         <div className="detailProject__header">
@@ -58,6 +61,7 @@ const DetailProject = () => {
             height="500px"
             url={project.url}
             controls
+            volume={0.7}
             playing
             className="react-player"
           />

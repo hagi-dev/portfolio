@@ -16,31 +16,31 @@ const Footer = () => {
           <h1>Puedes contactarme en :</h1>
           <ul>
             <li>
-              <a>
+              <a target="_blank" href="https://github.com/hagi-dev">
               <Github />
                 Github
               </a>
             </li>
             <li>
-              <a>
+              <a target="_blank" href="https://www.linkedin.com/in/hagitorres/">
               <Linkedin />
                 Linkedin
               </a>
             </li>
             <li>
-              <a>
+              <a target="_blank" href="mailto:hagiraitorresmacedo@gmail.com">
               <Gmail />
                 Gmail
               </a>
             </li>
             <li>
-              <a>
+              <a target="_blank" href="https://api.whatsapp.com/send?phone=973159686&text=Hola,%20quiero%20comunicarme%20contigo">
               <Whatsapp />
                 WhatsApp
               </a>
             </li>
             <li>
-              <a>
+              <a target="_blank" href="https://www.behance.net/hagitorresmacedo">
               <Behance />
                 Behance
               </a>
