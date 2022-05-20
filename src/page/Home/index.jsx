@@ -47,7 +47,7 @@ const Home = ({ param }) => {
             ¿ Quieres saber mas de mi ?
           </h3>
           <div className={`home__container__scroll__icon`}>
-            <p>Quiero sabe mas</p>
+            <p>Quiero saber mas</p>
             <ArrowScroll />
           </div>
         </div>
