@@ -6,6 +6,7 @@
     margin-bottom: 18px;
     display: flex;
     justify-content: flex-end;
+    box-sizing: border-box;
     align-items: center;
     animation: navBarAnimation 2s ease-in-out forwards;
     animation-delay: calc(var(--orderNavBar) * 100ms);
@@ -87,3 +88,14 @@
         transform: translateY(0px);
     }
 }
+@media screen and (max-width: size.$device_width){
+    .icon{
+        flex-wrap: wrap;
+        justify-content: center;
+        .icon__text{
+            width: 100%;
+            text-align: center;
+        }
+        }   
+     } 
+         

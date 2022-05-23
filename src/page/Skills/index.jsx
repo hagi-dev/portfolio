@@ -93,9 +93,20 @@ const Skills = ({ param, state }) => {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000,
     pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+    ]
   };
 
   const settings2 = {
@@ -106,12 +117,23 @@ const Skills = ({ param, state }) => {
     autoplay: true,
     autoplaySpeed: 7500,
     pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+    ]
   };
 
 
   return (
     <div className={`skills`} ref={param}>
-      <h1 className={`skills__title`}>Habilidades y conocimientos</h1>
+      <h1 className={`skills__title`}>Skills</h1>
       <div className={`skills__container`}>
         <div className={`skills__container__tecnique`}>
           <div className={`skills__container__tecnique__lenguaje`}>

@@ -51,7 +51,7 @@ const Project = ({ param, state }) => {
   ];
   return (
     <div className={`project`} id={"proyectos"} ref={param}>
-      <h1>Poyectos</h1>
+      <h1 className={`project__title`}>Poyectos</h1>
       <div className="project__container">
         {data.map((project, index) => {
           return (

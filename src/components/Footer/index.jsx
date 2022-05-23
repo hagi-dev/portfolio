@@ -13,7 +13,7 @@ const Footer = () => {
     <div className="footer" id={"contac"}>
       <div className={"footer__container"}>
         <div className={"footer__container__contac"}>
-          <h1>Puedes contactarme en :</h1>
+          <h1 className="footer_title">Contactarme en :</h1>
           <ul>
             <li>
               <a target="_blank" href="https://github.com/hagi-dev">

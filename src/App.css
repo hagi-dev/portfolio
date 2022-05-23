@@ -146,3 +146,19 @@
     transform: translateY(3000px);
   }
 }
+
+@media (max-width: 768px) {
+  html{
+    font-size: 13px;
+  }
+  .rocket{
+    display: none;
+  }
+}
+
+@media (max-width: 913px){
+  .rocket{
+    width: 180px;
+
+  }
+}

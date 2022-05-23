@@ -49,6 +49,7 @@
                         cursor: pointer;
                         text-align: center;
                         width: 200px;
+                        text-decoration: none;
                         height: 50px;
                         color: color.$color__primary;
                         font-size: 1.5rem;
@@ -97,7 +98,7 @@
             width: 200%;
             height: 100%;
             img{
-                width: 75%;
+                width: clamp(1300px, 75%, 75%);
                 height: auto;
                 animation: rotate1 400s linear infinite;
                 animation-direction: alternate;
@@ -114,5 +115,46 @@
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@media (max-width: size.$device_width__tablet){
+    .footer{
+        padding: 20px 30px;
+        padding-right: 15%;
+        
+        .footer__container{
+            .footer__container__contac{
+                .footer_title{
+                    margin-top: size.$margin_title;
+                }
+                ul{
+                    left: 30px;
+                    padding: 0;
+                    top: 120px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: size.$device_width) {
+    .footer{
+        padding: 20px 15px;
+        padding-right: 15%;
+        
+        .footer__container{
+            .footer__container__contac{
+                .footer_title{
+                    margin-top: size.$margin_title;
+                }
+                ul{
+                    left: 15px;
+                    padding: 0;
+                    top: 120px;
+                }
+            }
+        }
     }
 }

@@ -58,7 +58,7 @@ const DetailProject = () => {
         <div className="detailProject__container-video">
           <ReactPlayer
             width="100%"
-            height="500px"
+            height="100%"
             url={project.url}
             controls
             volume={0.7}
