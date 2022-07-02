@@ -93,8 +93,8 @@ const Skills = ({ param, state }) => {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: false,
-    autoplaySpeed: 5000,
+    autoplay: true,
+    autoplaySpeed: 3000,
     pauseOnHover: true,
     responsive: [
       {
@@ -115,7 +115,7 @@ const Skills = ({ param, state }) => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 7500,
+    autoplaySpeed: 5000,
     pauseOnHover: true,
     responsive: [
       {
